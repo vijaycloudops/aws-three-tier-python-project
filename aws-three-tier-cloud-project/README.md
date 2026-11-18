@@ -1,6 +1,6 @@
 # AWS Three-Tier Cloud Application using Terraform
 
-A beginner-friendly, hands-on AWS portfolio project that provisions a highly available web tier across two Availability Zones, a private PostgreSQL database, secure networking, monitoring, and a CI workflow.
+AWS project that provisions a highly available web tier across two Availability Zones, a private PostgreSQL database, secure networking, monitoring, and a CI workflow.
 
 > **Important:** This is a learning/demo environment, not a production-ready reference architecture. It uses HTTP for the demo ALB endpoint, one NAT Gateway to reduce NAT costs, a single-AZ RDS instance, and a Terraform-managed database secret. Review the security and cost notes before deployment.
 
