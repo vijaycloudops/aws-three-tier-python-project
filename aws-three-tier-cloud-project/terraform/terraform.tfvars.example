@@ -1,0 +1,11 @@
+aws_region         = "eu-west-1"
+project_name       = "three-tier-demo"
+environment        = "dev"
+app_instance_type  = "t3.micro"
+db_instance_class  = "db.t3.micro"
+db_name            = "appdb"
+db_username        = "appadmin"
+
+# Replace with your public IPv4 /32 for tighter ingress.
+# The ALB is the only public entry point; EC2 and RDS are private.
+allowed_http_cidr  = "0.0.0.0/0"

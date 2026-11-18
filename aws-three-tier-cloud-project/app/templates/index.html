@@ -1,0 +1,24 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>AWS Three-Tier Cloud Project</title>
+  <style>
+    body { font-family: Arial, sans-serif; max-width: 760px; margin: 8vh auto; padding: 24px; line-height: 1.6; }
+    main { border: 1px solid #ddd; border-radius: 14px; padding: 28px; }
+    .count { font-size: 3rem; font-weight: bold; margin: 8px 0; }
+    code { background: #f2f2f2; padding: 3px 6px; border-radius: 4px; }
+  </style>
+</head>
+<body>
+<main>
+  <h1>AWS Three-Tier Cloud Application</h1>
+  <p>Your request reached a Flask application running on EC2 behind an Application Load Balancer.</p>
+  <p>Database-backed page visits:</p>
+  <div class="count">{{ visit_count }}</div>
+  <p>Each page refresh increments a counter stored in Amazon RDS PostgreSQL.</p>
+  <p>Health endpoint: <code>/health</code> | Database readiness: <code>/ready</code></p>
+</main>
+</body>
+</html>
